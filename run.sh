@@ -32,7 +32,7 @@ make install
 cd /root/dspectrumgui
 gem install bundler
 gem install nokogiri -v '1.6.7.2' --source 'https://rubygems.org/'
-# run.sh fails here. 
-#bundle config build.nokogiri --use-system-libraries
-#bundle
-#rake db:setup && rake db:migrate && rake db:seed
+# run.sh fails here.
+bundle config build.nokogiri --use-system-libraries
+bundle
+rake db:setup && rake db:migrate && rake db:seed
